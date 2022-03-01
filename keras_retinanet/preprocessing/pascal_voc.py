@@ -28,28 +28,14 @@ except ImportError:
     import xml.etree.ElementTree as ET
 
 voc_classes = {
-    'aeroplane'   : 0,
-    'bicycle'     : 1,
-    'bird'        : 2,
-    'boat'        : 3,
-    'bottle'      : 4,
-    'bus'         : 5,
-    'car'         : 6,
-    'cat'         : 7,
-    'chair'       : 8,
-    'cow'         : 9,
-    'diningtable' : 10,
-    'dog'         : 11,
-    'horse'       : 12,
-    'motorbike'   : 13,
-    'person'      : 14,
-    'pottedplant' : 15,
-    'sheep'       : 16,
-    'sofa'        : 17,
-    'train'       : 18,
-    'tvmonitor'   : 19
+    'person'      : 0,
+    'flag'        : 1,
+    'SOS'         : 2,
+    'dog'         : 3,
+    'backpack'    : 4,
+    'jacket'      : 5,
+    'horse'       : 6
 }
-
 
 def _findNode(parent, name, debug_name=None, parse=None):
     if debug_name is None:
