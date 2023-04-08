@@ -94,9 +94,9 @@ Please download last snappoint of my training from this [link](https://drive.goo
 ```
 #--steps should be number of images in sosVOS/ImageSets/Main/train.txt
 #--snapshot-path (checkpoints of training is saved after every epoch)
-python keras_retinanet/bin/train.py --batch-size 1  --snapshot-path snapshots --random-transform --steps 45  pascal /home/sy/tf23/sosVOC
+python keras_retinanet/bin/train.py --batch-size 1  --snapshot-path snapshots --random-transform --steps 45  pascal /home/tf23/sosVOC
 #If you are training on top of our model, please add snap shot in model folder
-python keras_retinanet/bin/train.py --batch-size 1 --snapshot model/resnet50_pascal_29.h5  --snapshot-path snapshots --random-transform --steps 45  pascal /home/sy/tf23/sosVOC
+python keras_retinanet/bin/train.py --batch-size 1 --snapshot model/resnet50_pascal_29.h5  --snapshot-path snapshots --random-transform --steps 45  pascal /home/tf23/sosVOC
 ```
 
 Create Inference Model from snapshot
